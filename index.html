@@ -522,7 +522,7 @@
         margin-top: 4px;
       }
 
-      /* ── Glass Form ── */
+      /* ── Glass Card ── */
       .glass-card {
         background: rgba(12, 12, 20, 0.6);
         backdrop-filter: blur(16px);
@@ -532,28 +532,6 @@
       }
       .glass-card:hover {
         border-color: var(--accent-dim);
-      }
-
-      .form-control {
-        background: rgba(7, 7, 10, 0.6);
-        border: 1px solid var(--card-border);
-        color: var(--text);
-        border-radius: 0;
-        padding: 12px;
-        font-family: var(--font);
-        font-size: 13px;
-        transition:
-          border-color 0.3s,
-          box-shadow 0.3s;
-      }
-      .form-control:focus {
-        background: rgba(7, 7, 10, 0.8);
-        color: var(--text);
-        border-color: var(--accent);
-        box-shadow: 0 0 0 2px var(--accent-glow);
-      }
-      .form-control::placeholder {
-        color: var(--text-muted);
       }
 
       .btn-accent {
@@ -571,6 +549,26 @@
       .btn-accent:hover {
         opacity: 0.92;
         color: #000;
+        transform: translateY(-1px);
+      }
+
+      .btn-outline-accent {
+        background: transparent;
+        color: var(--accent);
+        border: 1px solid var(--accent-dim);
+        font-weight: 700;
+        padding: 12px 24px;
+        font-family: var(--font);
+        font-size: 13px;
+        transition:
+          border-color 0.3s,
+          background 0.3s,
+          transform 0.3s;
+      }
+      .btn-outline-accent:hover {
+        border-color: var(--accent);
+        background: rgba(245, 158, 11, 0.08);
+        color: var(--accent3);
         transform: translateY(-1px);
       }
 
@@ -649,11 +647,14 @@
             class="mt-3 mb-4 text-dim"
             style="max-width: 600px; font-size: 15px; line-height: 1.8"
           >
-            Senior PHP Developer with expertise in building secure REST APIs and
-            optimizing MySQL performance. Enhances user experience through
-            effective UI/UX design and collaboration. Skilled in Laravel and
-            JavaScript, delivering impactful software solutions with strong
-            problem-solving capabilities.
+            Senior PHP / Laravel Backend Developer with 11+ years architecting
+            and delivering 50+ enterprise web applications for international
+            clients across SaaS, E-Commerce, CRM, Healthcare, Real Estate, and
+            Education. Deep expertise in Laravel, CakePHP, MySQL, MongoDB, and
+            Redis — designing scalable backend architecture, optimizing large
+            databases, building high-performance reporting dashboards, and
+            automating business workflows with queues, cron jobs, and
+            third-party API integrations.
           </p>
           <div class="d-flex gap-2 flex-wrap">
             <span class="term-badge">PHP</span>
@@ -667,6 +668,22 @@
             <span class="term-badge">jQuery</span>
             <span class="term-badge">Bootstrap</span>
             <span class="term-badge">Git</span>
+          </div>
+          <div class="d-flex gap-3 flex-wrap mt-4 align-items-center">
+            <a
+              href="Chaman%20Rastogi.pdf"
+              download="Chaman Rastogi - Resume.pdf"
+              class="btn btn-accent"
+            >
+              <i class="fa-solid fa-file-pdf me-2"></i>DOWNLOAD RESUME (PDF)
+            </a>
+            <a
+              href="Chaman%20Rastogi.docx"
+              download="Chaman Rastogi - Resume.doc"
+              class="btn btn-outline-accent"
+            >
+              <i class="fa-solid fa-file-word me-2"></i>RESUME (.DOC)
+            </a>
           </div>
         </div>
       </section>
@@ -695,8 +712,9 @@
               <i class="fa-solid fa-gears card-icon"></i>
               <h5>BACKEND DEVELOPMENT</h5>
               <p class="text-dim mb-0" style="font-size: 14px">
-                Expert in PHP, Laravel, CakePHP, CodeIgniter with 11+ years
-                building enterprise-grade web applications and secure REST APIs.
+                Expert in PHP 8, Laravel, CakePHP, and CodeIgniter with 11+
+                years building enterprise-grade web applications, secure REST
+                APIs, and modernizing legacy codebases with SOLID principles.
               </p>
             </div>
           </div>
@@ -709,11 +727,11 @@
                 02_DATABASE
               </div>
               <i class="fa-solid fa-database card-icon"></i>
-              <h5>DATABASE & PERFORMANCE</h5>
+              <h5>DATABASE &amp; PERFORMANCE</h5>
               <p class="text-dim mb-0" style="font-size: 14px">
-                Deep optimization of MySQL queries, MongoDB design, Redis
-                caching strategies, and query performance tuning for
-                high-traffic systems.
+                Deep optimization of large MySQL databases with 40%+ query
+                performance gains via indexing, schema tuning, Redis caching,
+                and MongoDB design for high-traffic systems.
               </p>
             </div>
           </div>
@@ -726,11 +744,11 @@
                 03_AUTOMATION
               </div>
               <i class="fa-solid fa-clock card-icon"></i>
-              <h5>CRON JOBS & AUTOMATION</h5>
+              <h5>AUTOMATION &amp; QUEUES</h5>
               <p class="text-dim mb-0" style="font-size: 14px">
-                Building automation scripts, scheduled tasks, queue jobs, and
-                third-party API integrations for streamlined business
-                operations.
+                Laravel queue workers, cron jobs, and third-party API
+                integrations (payments, SMS, email, cloud storage) that move
+                heavy workloads out of the request cycle.
               </p>
             </div>
           </div>
@@ -775,49 +793,73 @@
           </div>
           <div class="tech-grid">
             <div class="tech-item">
-              <i class="fa-brands fa-php"></i><span>PHP</span>
+              <i class="fa-brands fa-php"></i><span>PHP 8.x</span>
             </div>
             <div class="tech-item">
               <i class="fa-brands fa-laravel"></i><span>Laravel</span>
             </div>
             <div class="tech-item">
+              <i class="fa-solid fa-cake-candles"></i><span>CakePHP</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-fire"></i><span>CodeIgniter</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-code"></i><span>Core PHP</span>
+            </div>
+            <div class="tech-item">
               <i class="fa-solid fa-database"></i><span>MySQL</span>
             </div>
             <div class="tech-item">
-              <i class="fa-solid fa-database"></i><span>MongoDB</span>
+              <i class="fa-solid fa-leaf"></i><span>MongoDB</span>
             </div>
             <div class="tech-item">
-              <i class="fa-solid fa-server"></i><span>Redis</span>
+              <i class="fa-solid fa-bolt"></i><span>Redis</span>
             </div>
             <div class="tech-item">
               <i class="fa-brands fa-js"></i><span>JavaScript</span>
             </div>
             <div class="tech-item">
+              <i class="fa-solid fa-dollar-sign"></i><span>jQuery</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-arrows-rotate"></i><span>AJAX</span>
+            </div>
+            <div class="tech-item">
               <i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span>
             </div>
             <div class="tech-item">
-              <i class="fa-brands fa-git-alt"></i><span>Git</span>
+              <i class="fa-brands fa-react"></i><span>React</span>
             </div>
             <div class="tech-item">
-              <i class="fa-brands fa-linux"></i><span>Linux</span>
+              <i class="fa-brands fa-angular"></i><span>Angular</span>
             </div>
             <div class="tech-item">
-              <i class="fa-solid fa-code-branch"></i><span>REST APIs</span>
-            </div>
-            <div class="tech-item">
-              <i class="fa-solid fa-cake-candles"></i><span>CakePHP</span>
+              <i class="fa-brands fa-node-js"></i><span>Node.js</span>
             </div>
             <div class="tech-item">
               <i class="fa-brands fa-wordpress"></i><span>WordPress</span>
             </div>
             <div class="tech-item">
-              <i class="fa-brands fa-node"></i><span>Node.js</span>
-            </div>
-            <div class="tech-item">
               <i class="fa-brands fa-shopify"></i><span>Shopify</span>
             </div>
             <div class="tech-item">
-              <i class="fa-solid fa-image"></i><span>Photoshop</span>
+              <i class="fa-solid fa-code-branch"></i><span>REST APIs</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-git-alt"></i><span>Git &amp; GitHub</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-cube"></i><span>Composer</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-solid fa-paper-plane"></i><span>Postman</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-docker"></i><span>Docker</span>
+            </div>
+            <div class="tech-item">
+              <i class="fa-brands fa-linux"></i><span>Linux / Nginx</span>
             </div>
             <div class="tech-item">
               <i class="fa-solid fa-cloud"></i><span>AWS</span>
@@ -884,7 +926,7 @@
             </div>
             <div class="skill-bar-wrap">
               <div class="skill-bar-label">
-                <span>Performance Optimization</span><span>90%</span>
+                <span>Performance Tuning / Caching</span><span>90%</span>
               </div>
               <div class="skill-bar-track">
                 <div class="skill-bar-fill" style="width: 90%"></div>
@@ -914,37 +956,46 @@
             <div class="timeline-content">
               <h5>SENIOR PHP DEVELOPER @ MASTHEAD TECHNOLOGIES PVT. LTD.</h5>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>Built secure REST APIs
-                using Laravel and Core PHP to support seamless integration and
-                data exchange.
+                <span class="timeline-bullet">▸</span>Architect and develop
+                enterprise web applications and secure RESTful APIs using
+                Laravel, Core PHP, MySQL, and MongoDB, supporting
+                business-critical workflows for international clients.
               </p>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>Optimized MySQL queries
-                and improved application performance.
+                <span class="timeline-bullet">▸</span>Optimize large MySQL
+                databases, improving query performance by 40%+ through
+                indexing, query restructuring, and schema tuning.
               </p>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>Developed enterprise
-                dashboard and reporting solutions to enhance data visibility and
-                decision-making.
+                <span class="timeline-bullet">▸</span>Design data-rich
+                enterprise reporting dashboards with real-time analytics and
+                data visualization for business decision-making.
               </p>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>Collaborated with
-                cross-functional teams and clients to align project goals.
+                <span class="timeline-bullet">▸</span>Implement Laravel queue
+                workers and cron jobs for scheduled tasks and asynchronous
+                processing, moving heavy workloads out of the request cycle.
+              </p>
+              <p class="text-dim mb-1">
+                <span class="timeline-bullet">▸</span>Integrate third-party APIs
+                (payment gateways, SMS, email, cloud storage) to automate
+                business workflows and reduce manual effort.
               </p>
               <p class="text-dim mb-2">
-                <span class="timeline-bullet">▸</span>Developed automation
-                scripts and cron jobs.
+                <span class="timeline-bullet">▸</span>Modernize legacy codebases
+                using SOLID principles and MVC architecture, improving
+                maintainability, security, and deployment.
               </p>
               <p
                 class="text-muted mb-1"
                 style="font-size: 11px; font-family: var(--font-mono)"
               >
-                Tech: Laravel, MySQL, REST APIs, JavaScript, jQuery, Bootstrap,
-                AJAX, Cron Jobs
+                Tech: Laravel, Core PHP, MySQL, MongoDB, REST APIs, Queues &amp;
+                Jobs, Cron Jobs, Third-Party APIs
               </p>
               <div class="d-flex gap-2 flex-wrap mt-2">
                 <span class="term-badge">#enterprise-apps</span>
-                <span class="term-badge">#dashboard</span>
+                <span class="term-badge">#rest-apis</span>
                 <span class="term-badge">#performance-tuning</span>
               </div>
             </div>
@@ -954,39 +1005,41 @@
             <div class="timeline-dot"></div>
             <div class="timeline-date mb-2">MAR 2023 — JUN 2024</div>
             <div class="timeline-content">
-              <h5>SENIOR WEB DEVELOPER @ HSI CORPORATE SERVICES PVT. LTD.</h5>
+              <h5>
+                SENIOR WEB DEVELOPER @ HSI CORPORATE SERVICES PVT. LTD. (SEO OUT
+                THE BOX)
+              </h5>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>Developed Laravel and
-                WordPress applications to enhance user experience and
-                functionality.
+                <span class="timeline-bullet">▸</span>Developed custom Laravel
+                applications and REST APIs for CRM and client management
+                systems.
               </p>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>Integrated third-party
-                APIs and optimized websites for improved performance.
+                <span class="timeline-bullet">▸</span>Improved website
+                performance to Lighthouse scores of 90+ through caching,
+                minification, asset optimization, and CDN configuration.
               </p>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>Developed responsive web
-                applications using HTML, CSS, and JavaScript frameworks.
-              </p>
-              <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>Collaborated with
-                cross-functional teams to define project requirements.
+                <span class="timeline-bullet">▸</span>Built and maintained
+                WordPress sites with custom themes, plugins, and WooCommerce
+                integrations.
               </p>
               <p class="text-dim mb-2">
-                <span class="timeline-bullet">▸</span>Enhanced user experience
-                through effective UI/UX design practices.
+                <span class="timeline-bullet">▸</span>Collaborated directly with
+                international clients to gather requirements and deliver
+                iterative solutions on schedule.
               </p>
               <p
                 class="text-muted mb-1"
                 style="font-size: 11px; font-family: var(--font-mono)"
               >
-                Tech: HTML, CSS, JS, jQuery, Bootstrap, Photoshop, Core PHP,
-                MySQL, WordPress, Laravel
+                Tech: Laravel, Core PHP, MySQL, WordPress, WooCommerce,
+                JavaScript, jQuery, Bootstrap, Photoshop
               </p>
               <div class="d-flex gap-2 flex-wrap mt-2">
                 <span class="term-badge">#laravel</span>
                 <span class="term-badge">#wordpress</span>
-                <span class="term-badge">#uiux</span>
+                <span class="term-badge">#performance</span>
               </div>
             </div>
           </div>
@@ -997,19 +1050,24 @@
             <div class="timeline-content">
               <h5>SOFTWARE DEVELOPER @ CONNECTING DOTS INFOTECH</h5>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>WordPress & Angular
-                development: design themes, manage content, develop web apps.
+                <span class="timeline-bullet">▸</span>Developed full-stack web
+                applications using PHP, JavaScript, Bootstrap, and Angular,
+                delivering features end-to-end from database to UI.
               </p>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>Built sites for diverse
-                clients across multiple industries.
+                <span class="timeline-bullet">▸</span>Designed and implemented
+                REST APIs consumed by frontend components and external clients.
+              </p>
+              <p class="text-dim mb-2">
+                <span class="timeline-bullet">▸</span>Managed WordPress
+                deployments, custom post types, and advanced custom fields.
               </p>
               <p
                 class="text-muted mb-2"
                 style="font-size: 11px; font-family: var(--font-mono)"
               >
-                Tech: HTML, CSS, JS, jQuery, Bootstrap, Photoshop, Core PHP,
-                MySQL, WordPress, Node.js, Angular
+                Tech: PHP, MySQL, JavaScript, jQuery, Bootstrap, Angular,
+                Node.js, WordPress
               </p>
               <p
                 class="text-muted mb-2"
@@ -1019,9 +1077,9 @@
                 ullu.app
               </p>
               <div class="d-flex gap-2 flex-wrap mt-2">
-                <span class="term-badge">#php</span>
+                <span class="term-badge">#fullstack</span>
                 <span class="term-badge">#angular</span>
-                <span class="term-badge">#nodejs</span>
+                <span class="term-badge">#rest-apis</span>
               </div>
             </div>
           </div>
@@ -1032,19 +1090,24 @@
             <div class="timeline-content">
               <h5>FULL STACK DEVELOPER @ THE CATALYST GROUP</h5>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>PHP website maintenance:
-                fix bugs, optimize performance, ensure security.
+                <span class="timeline-bullet">▸</span>Developed a Learning
+                Management System (LMS) with course management, quizzes, and
+                progress tracking.
               </p>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>LMS & E-commerce
-                development with Shopify and payment gateway integration.
+                <span class="timeline-bullet">▸</span>Built e-commerce solutions
+                on Shopify with custom payment gateway integrations.
+              </p>
+              <p class="text-dim mb-2">
+                <span class="timeline-bullet">▸</span>Created secure backend
+                APIs supporting mobile and web frontends.
               </p>
               <p
                 class="text-muted mb-2"
                 style="font-size: 11px; font-family: var(--font-mono)"
               >
-                Tech: HTML, CSS, JS, jQuery, Bootstrap, Photoshop, Core PHP,
-                MySQL, Shopify
+                Tech: Core PHP, MySQL, JavaScript, jQuery, Bootstrap, Shopify,
+                REST APIs
               </p>
               <p
                 class="text-muted mb-2"
@@ -1055,7 +1118,7 @@
               <div class="d-flex gap-2 flex-wrap mt-2">
                 <span class="term-badge">#lms</span>
                 <span class="term-badge">#ecommerce</span>
-                <span class="term-badge">#shopify</span>
+                <span class="term-badge">#api-development</span>
               </div>
             </div>
           </div>
@@ -1066,15 +1129,19 @@
             <div class="timeline-content">
               <h5>SR. PHP DEVELOPER @ MAGICBYTE SOLUTIONS</h5>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>PHP & WordPress
-                development: design themes, develop plugins, manage content.
+                <span class="timeline-bullet">▸</span>Developed and maintained
+                PHP/MySQL web applications for international clients.
+              </p>
+              <p class="text-dim mb-2">
+                <span class="timeline-bullet">▸</span>Implemented responsive UI
+                components and integrated third-party APIs.
               </p>
               <p
                 class="text-muted mb-2"
                 style="font-size: 11px; font-family: var(--font-mono)"
               >
-                Tech: HTML, CSS, JS, jQuery, Bootstrap, Photoshop, Core PHP,
-                MySQL, WordPress
+                Tech: Core PHP, MySQL, JavaScript, jQuery, Bootstrap, WordPress,
+                REST APIs
               </p>
               <p
                 class="text-muted mb-0"
@@ -1091,19 +1158,26 @@
             <div class="timeline-content">
               <h5>SR. PHP DEVELOPER @ ADIT24X7</h5>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>PHP website maintenance:
-                fix bugs, optimize performance, manage backups.
+                <span class="timeline-bullet">▸</span>Architected and maintained
+                enterprise PHP applications serving thousands of users, with
+                scalable backend architecture.
               </p>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>Built and maintained 10+
-                client websites over a 5-year tenure.
+                <span class="timeline-bullet">▸</span>Led database migrations,
+                performance tuning, and security hardening initiatives across
+                production systems.
+              </p>
+              <p class="text-dim mb-2">
+                <span class="timeline-bullet">▸</span>Mentored junior developers
+                and established coding standards and best practices for the
+                team.
               </p>
               <p
                 class="text-muted mb-2"
                 style="font-size: 11px; font-family: var(--font-mono)"
               >
-                Tech: HTML, CSS, JS, jQuery, Bootstrap, Photoshop, Core PHP,
-                MySQL, WordPress
+                Tech: Core PHP, MySQL, JavaScript, jQuery, Bootstrap,
+                WordPress, Apache
               </p>
               <p
                 class="text-muted mb-0"
@@ -1119,17 +1193,20 @@
             <div class="timeline-dot"></div>
             <div class="timeline-date mb-2">AUG 2012 — FEB 2013</div>
             <div class="timeline-content">
-              <h5>PHP DEVELOPER @ 3D WEB</h5>
+              <h5>PHP DEVELOPER @ 3D WEB (3D WEBERS TECHNOLOGIES)</h5>
               <p class="text-dim mb-1">
-                <span class="timeline-bullet">▸</span>PHP development with Core
-                PHP, MySQL, HTML, CSS, JavaScript.
+                <span class="timeline-bullet">▸</span>Developed dynamic websites
+                and content management systems using Core PHP and MySQL.
+              </p>
+              <p class="text-dim mb-2">
+                <span class="timeline-bullet">▸</span>Built responsive frontend
+                interfaces with HTML, CSS, JavaScript, jQuery, and Bootstrap.
               </p>
               <p
                 class="text-muted mb-0"
                 style="font-size: 11px; font-family: var(--font-mono)"
               >
-                Tech: HTML, CSS, JS, jQuery, Bootstrap, Photoshop, Core PHP,
-                MySQL
+                Tech: Core PHP, MySQL, HTML, CSS, JavaScript, jQuery, Bootstrap
               </p>
             </div>
           </div>
@@ -1353,20 +1430,20 @@
           </div>
           <div class="col-6 col-md-3">
             <div class="stat-card">
-              <div class="stat-number">50+</div>
-              <div class="stat-label">Web Applications</div>
+              <div class="stat-number">80+</div>
+              <div class="stat-label">Enterprise Applications</div>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="stat-card">
-              <div class="stat-number">100+</div>
-              <div class="stat-label">REST APIs</div>
+              <div class="stat-number">40%+</div>
+              <div class="stat-label">DB Performance Gains</div>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="stat-card">
-              <div class="stat-number">5+</div>
-              <div class="stat-label">International Clients</div>
+              <div class="stat-number">6+</div>
+              <div class="stat-label">Industries Served</div>
             </div>
           </div>
         </div>
@@ -1407,22 +1484,6 @@
               <span
                 class="text-muted"
                 style="font-size: 12px; font-family: var(--font-mono)"
-                >2010</span
-              >
-            </div>
-            <div class="col-md-9 ps-md-3 mt-2 mt-md-0">
-              <h5 class="mb-1" style="color: var(--text)">PGDM (Animation)</h5>
-              <p class="text-dim mb-0">Xplora Design School</p>
-            </div>
-          </div>
-          <div
-            class="tilt-card-inner row g-0"
-            style="padding: 16px 20px; margin: 0"
-          >
-            <div class="col-md-3">
-              <span
-                class="text-muted"
-                style="font-size: 12px; font-family: var(--font-mono)"
                 >2011</span
               >
             </div>
@@ -1447,14 +1508,14 @@
           ><span class="prompt-symbol">$</span> cat soft-skills.json
         </div>
         <div class="d-flex gap-2 flex-wrap mt-4">
-          <span class="term-badge">Leadership</span>
-          <span class="term-badge">Team Management</span>
+          <span class="term-badge">Team Leadership</span>
+          <span class="term-badge">Client Management</span>
+          <span class="term-badge">Agile / Scrum</span>
+          <span class="term-badge">Code Review</span>
+          <span class="term-badge">Technical Documentation</span>
           <span class="term-badge">Problem Solving</span>
           <span class="term-badge">Analytical Thinking</span>
-          <span class="term-badge">Communication</span>
-          <span class="term-badge">Client Handling</span>
           <span class="term-badge">Time Management</span>
-          <span class="term-badge">Agile Development</span>
           <span class="term-badge">English / Hindi</span>
         </div>
       </section>
@@ -1469,10 +1530,10 @@
           <span class="prompt-user">chaman@developer</span
           ><span class="prompt-symbol">:</span
           ><span class="prompt-symbol">~</span
-          ><span class="prompt-symbol">$</span> ./send_message.sh --to "chaman"
+          ><span class="prompt-symbol">$</span> ./resume.sh --download pdf doc
         </div>
         <div class="row g-5 mt-2">
-          <div class="col-md-5">
+          <div class="col-md-6">
             <h2 class="bg-highlight fw-bold mb-0">GET IN TOUCH</h2>
             <p class="text-dim mb-4 mt-3">
               Available for senior backend developer roles and challenging
@@ -1484,7 +1545,7 @@
                 style="font-family: var(--font-mono); font-size: 11px"
                 >EMAIL:</span
               >
-              <span>chamanrastogi@gmail.com</span>
+              <a href="mailto:chamanrastogi@gmail.com">chamanrastogi@gmail.com</a>
             </div>
             <div class="mb-2">
               <span
@@ -1492,7 +1553,7 @@
                 style="font-family: var(--font-mono); font-size: 11px"
                 >PHONE:</span
               >
-              <span>+91 8077007756</span>
+              <a href="tel:+918077007756">+91 8077007756</a>
             </div>
             <div class="mb-4">
               <span
@@ -1502,102 +1563,66 @@
               >
               <span>Noida, Uttar Pradesh, India</span>
             </div>
-            <div class="d-flex gap-4">
-              <a href="https://github.com/chamanrastogi"
-                ><i class="fa-brands fa-github me-1"></i> GITHUB</a
-              >
-              <a href="https://linkedin.com/in/chamanrastogi"
+            <div class="d-flex gap-4 mb-4">             
+              <a href="https://www.linkedin.com/in/chaman-r-3a773725/"
                 ><i class="fa-brands fa-linkedin me-1"></i> LINKEDIN</a
               >
             </div>
+            <div class="d-flex gap-3 flex-wrap">
+              <a
+                href="Chaman%20Rastogi.pdf"
+                download="Chaman Rastogi - Resume.pdf"
+                class="btn btn-accent"
+              >
+                <i class="fa-solid fa-file-pdf me-2"></i>RESUME (PDF)
+              </a>
+              <a
+                href="Chaman%20Rastogi.docx"
+                download="Chaman Rastogi - Resume.doc"
+                class="btn btn-outline-accent"
+              >
+                <i class="fa-solid fa-file-word me-2"></i>RESUME (.DOC)
+              </a>
+            </div>
           </div>
-          <div class="col-md-7">
-            <div class="glass-card">
+          <div class="col-md-6">
+            <div class="glass-card h-100 d-flex flex-column justify-content-center">
               <div
-                class="text-muted mb-4"
+                class="text-muted mb-3 text-center"
                 style="font-size: 10px; font-family: var(--font-mono)"
               >
-                MESSAGE_BUFFER
+                RESUME_ARCHIVE :: LATEST VERSION
               </div>
-              <form>
-                <div class="row g-3 mb-3">
-                  <div class="col-sm-6">
-                    <label
-                      class="text-muted mb-1"
-                      style="font-size: 10px; font-family: var(--font-mono)"
-                      >STDIN_NAME</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="John Doe"
-                    />
-                  </div>
-                  <div class="col-sm-6">
-                    <label
-                      class="text-muted mb-1"
-                      style="font-size: 10px; font-family: var(--font-mono)"
-                      >SMTP_EMAIL</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <label
-                    class="text-muted mb-1"
-                    style="font-size: 10px; font-family: var(--font-mono)"
-                    >MSG_SUBJECT</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Project Enquiry"
-                  />
-                </div>
-                <div class="mb-4">
-                  <label
-                    class="text-muted mb-1"
-                    style="font-size: 10px; font-family: var(--font-mono)"
-                    >STDIN_MESSAGE</label
-                  >
-                  <textarea
-                    class="form-control"
-                    rows="4"
-                    placeholder="Tell me about your project..."
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn-accent w-100">
-                  SEND MESSAGE
-                </button>
-              </form>
+              <i
+                class="fa-solid fa-file-arrow-down text-center card-icon mb-3"
+                style="display: block; font-size: 40px"
+              ></i>
+              <p class="text-dim text-center mb-4" style="font-size: 14px">
+                Grab a copy of my resume in PDF or Word format — same content,
+                ATS-friendly formatting.
+              </p>
+              <div class="d-flex flex-column gap-3 align-items-center">
+                <a
+                  href="Chaman%20Rastogi.pdf"
+                  download="Chaman Rastogi - Resume.pdf"
+                  class="btn btn-accent w-75"
+                >
+                  <i class="fa-solid fa-file-pdf me-2"></i>DOWNLOAD .PDF
+                </a>
+                <a
+                  href="Chaman%20Rastogi.docx"
+                  download="Chaman Rastogi - Resume.doc"
+                  class="btn btn-outline-accent w-75"
+                >
+                  <i class="fa-solid fa-file-word me-2"></i>DOWNLOAD .DOC
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Footer -->
-      <footer
-        class="mt-5 pt-5 pb-3 border-top border-secondary border-opacity-10 d-flex flex-column flex-md-row justify-content-between align-items-center text-muted"
-        style="
-          font-size: 10px;
-          font-family: var(--font-mono);
-          position: relative;
-          z-index: 1;
-        "
-      >
-        <div class="mb-2 mb-md-0">CHAMAN RASTOGI :: RESUME V2.0</div>
-        <div class="mb-2 mb-md-0">© 2026 ALL RIGHTS RESERVED</div>
-        <div class="d-flex gap-3">
-          <a href="index.html" class="text-muted text-decoration-underline"
-            >HOME</a
-          >
-          <a href="#" class="text-muted text-decoration-underline">PRINT</a>
-        </div>
-      </footer>
+   
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
